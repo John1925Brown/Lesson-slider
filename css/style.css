@@ -1,0 +1,65 @@
+@font-face {
+   font-family: 'Bad Script';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../fonts/bad-script-v14-latin-regular.eot'); /* IE9 Compat Modes */
+   src: local(''),
+        url('../fonts/bad-script-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/bad-script-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/bad-script-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/bad-script-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/bad-script-v14-latin-regular.svg#BadScript') format('svg'); /* Legacy iOS */
+ }
+
+body{
+   box-sizing: border-box;
+   color: #000;
+   font-family: Bad Script;
+   font-size: 40px;
+   text-shadow: 0px 0px 10px #000;
+}
+
+
+
+.slider {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.item {
+   flex-basis: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   transition: 0.3s;
+}
+
+.item:hover, :focus{
+   flex-basis: 100%;
+   transition: 0.3s;
+}
+
+
+.item-1 {
+   background: url('../img/summer.jpg') no-repeat center center;
+   background-size: cover;
+}
+
+.item-2 {
+   background: url('../img/autumn.jpg') no-repeat center center;
+   background-size: cover;
+}
+
+.item-3 {
+   background: url('../img/winter.jpg') no-repeat center center;
+   background-size: cover;
+}
+
+.item-4 {
+   background: url('../img/spring.jpg') no-repeat center center;
+   background-size: cover;
+}
+
+
