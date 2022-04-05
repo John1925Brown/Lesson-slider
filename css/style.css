@@ -15,10 +15,12 @@ body{
    box-sizing: border-box;
    color: #000;
    font-family: Bad Script;
-   font-size: 40px;
-   text-shadow: 0px 0px 10px #000;
 }
 
+span{
+   font-size: 2rem;
+   text-shadow: 0px 0px 10px #000;
+}
 
 
 .slider {
@@ -62,4 +64,16 @@ body{
    background-size: cover;
 }
 
-
+@media (max-width: 640px){
+   .slider{
+      flex-flow: column;
+      height: 100vh;
+   }
+   .item{
+      height: 25%;
+      width: 100%;
+   }
+   .item:hover{
+      flex-grow: 30%;
+   }
+}
